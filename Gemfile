@@ -17,6 +17,8 @@ gem "simple_form", github: "heartcombo/simple_form"
 
 # gem "sassc-rails"
 
+gem 'open-uri'
+
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
