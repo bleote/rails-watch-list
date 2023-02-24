@@ -1,0 +1,9 @@
+<div class="container text-center col-8 bg-light py-4">
+  <h1>Lists</h1>
+  <ul class="list-unstyled p-2">
+    <% @lists.each do |list| %>
+    <li class="p-1"><strong><%= link_to list.name%></strong></li>
+    <% end %>
+  </ul>
+  <%= link_to "Back to Main Menu", root_path, class: "btn-primary p-2 rounded" %>
+</div>
