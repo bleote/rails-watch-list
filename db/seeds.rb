@@ -21,7 +21,6 @@ repos = JSON.parse(response)
 movies = repos['results']
 top_ten = movies.first(10)
 
-
 puts 'Fetching data of 10 movies...'
 top_ten.each do |movie|
   Movie.create(

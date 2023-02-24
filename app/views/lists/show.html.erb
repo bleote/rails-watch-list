@@ -1,0 +1,17 @@
+<div class="container text-center col-8 bg-light">
+  <h2><%= @list.name %></h2>
+
+  <p>Add a movie for <%= @list.name %></p>
+
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.association :movie %>
+  <%= f.submit "Create Bookmark", class: "btn btn-primary"%>
+<% end %>
+</div>
+
+  <ul class="list-unstyled p-2">
+      <li><%=  link_to "Back to my lists", lists_path%></li>
+
+      <li><%= link_to "Back to main menu", root_path, class: "btn-secondary p-2 rounded"%></li>
+    </ul>
+</div>

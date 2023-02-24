@@ -2,8 +2,10 @@
   <h1>Lists</h1>
   <ul class="list-unstyled p-2">
     <% @lists.each do |list| %>
-    <li class="p-1"><strong><%= link_to list.name%></strong></li>
+    <li class="p-1"><strong><%= link_to list.name, list %></strong></li>
     <% end %>
   </ul>
-  <%= link_to "Back to Main Menu", root_path, class: "btn-primary p-2 rounded" %>
+    <li><%= link_to "Create movie list", new_list_path, class: "btn-primary p-2 rounded" %></li>
+
+    <li><%= link_to "Back to Main Menu", root_path, class: "btn-primary p-2 rounded" %></li>
 </div>
